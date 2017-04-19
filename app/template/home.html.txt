@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div class="home">
+	<h1>BlindEye</h1>
+	<p>Welcome to BlindEye</p>
+</div>
+</body>
+</html>
