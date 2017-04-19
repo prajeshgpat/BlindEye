@@ -9,7 +9,7 @@ app = Flask('hello')
 
 @app.route('/')
 def webprint():
-    return render_template('result.html') 
+    return render_template('results.html') 
 
 if __name__ == '__main__':
     app.run(host = '0.0.0.0', port = 3000)
