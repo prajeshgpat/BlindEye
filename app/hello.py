@@ -1,14 +1,15 @@
 from flask import Flask, request
 
-app = Flask(__name__)
+
+
+from flask import Flask, render_template
+
+app = Flask('app')
+# webcode = open('webcode.html').read() - not needed
 
 @app.route('/')
-def home():
-    return app.send_static_file("template/home.html")
-
-@app.route('/results/')
-def results():
-    return app.send_static_file("template/results.html")
+def webprint():
+    return render_template('result.html') 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host = '0.0.0.0', port = 3000)
