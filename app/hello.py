@@ -68,8 +68,11 @@ def function(file_name):
 def home():
     # Instantiates a client
 
-    result = function('crosswalk.png')    
+    result = function('images/crosswalk.png')    
     return render_template('results.html', result=result)
 
 if __name__ == '__main__':
     app.run(host = '0.0.0.0', port = 3000)
+
+
+    
