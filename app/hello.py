@@ -1,14 +1,14 @@
-from flask import Flask, render_template
+from flask import Flask, request
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('home.html')
+    return app.send_static_file("home.html")
 
 @app.route('/results/')
 def results():
-    return render_template('results.html')
+    return app.send_static_file("results.html")
 
 if __name__ == '__main__':
     app.run(debug=True)
