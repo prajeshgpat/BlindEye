@@ -4,7 +4,7 @@ from flask import Flask, request
 
 from flask import Flask, render_template
 
-app = Flask('app')
+app = Flask('hello')
 # webcode = open('webcode.html').read() - not needed
 
 @app.route('/')
