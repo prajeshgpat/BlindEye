@@ -1,0 +1,4 @@
+deploy:
+  provider: heroku
+  api_key: 597b4042-929c-479d-a48d-cdeb96b2e5b0
+  app: blindeye
