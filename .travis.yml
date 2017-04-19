@@ -1,15 +1,12 @@
 language: python
 python:
-  - "2.6"
-  - "2.7"
-  - "3.2"
-  - "3.3"
-  - "3.4"
-  - "3.5"
+  - "3.5.2"
 # command to install dependencies
-install: "pip install -r requirements.txt"
+install: 
+- pip install -r requirements.txt
 # command to run tests
-script: pytest
+script: 
+- echo "No Script to run"
 deploy:
   provider: heroku
   api_key: 597b4042-929c-479d-a48d-cdeb96b2e5b0
